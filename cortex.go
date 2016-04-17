@@ -45,7 +45,7 @@ func init() {
 				Commands: []string{"who"},
 				Objects: []string{"you"},
 			},
-		}
+		},
 	)
 }
 

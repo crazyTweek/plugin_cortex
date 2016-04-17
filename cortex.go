@@ -28,13 +28,12 @@ var p *dt.Plugin
 func init() {
 	rand.Seed(time.Now().UnixNano())
 	trigger := &nlp.StructuredInput{
-		Commands: []string{"what", "show", "tell", "is"},
-		Objects: []string{"weather", "temperature", "temp", "outside",
-			"raining"},
+		Commands: []string{"who"},
+		Objects: []string{"you"},
 	}
 	fns := &dt.PluginFns{Run: Run, FollowUp: FollowUp}
 	var err error
-	p, err = plugin.New("github.com/itsabot/plugin_cortex", trigger, fns)
+	p, err = plugin.New("github.com/crazyTweek/plugin_cortex", trigger, fns)
 	if err != nil {
 		log.Fatal(err)
 	}

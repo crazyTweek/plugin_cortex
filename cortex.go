@@ -1,18 +1,18 @@
 package cortex
 
 import (
-	"encoding/json"
-	"errors"
-	"fmt"
+	//"encoding/json"
+	//"errors"
+	//"fmt"
 	"log"
 	"math/rand"
-	"net/http"
-	"net/url"
-	"strings"
+	//"net/http"
+	//"net/url"
+	//"strings"
 	"time"
 
 	"github.com/itsabot/abot/shared/datatypes"
-	"github.com/itsabot/abot/shared/language"
+	//"github.com/itsabot/abot/shared/language"
 	"github.com/itsabot/abot/shared/nlp"
 	"github.com/itsabot/abot/shared/plugin"
 )
@@ -33,7 +33,7 @@ func init() {
 	}
 	fns := &dt.PluginFns{Run: Run, FollowUp: FollowUp}
 	var err error
-	p, err = plugin.New("github.com/crazyTweek/plugin_cortex", trigger, fns)
+	p, err = plugin.New("github.com/crazytweek/plugin_cortex", trigger, fns)
 	if err != nil {
 		log.Fatal(err)
 	}

@@ -1,18 +1,10 @@
 package cortex
 
 import (
-	//"encoding/json"
-	//"errors"
-	//"fmt"
 	"log"
 	"math/rand"
-	//"net/http"
-	//"net/url"
-	//"strings"
 	"time"
-
 	"github.com/itsabot/abot/shared/datatypes"
-	//"github.com/itsabot/abot/shared/language"
 	"github.com/itsabot/abot/shared/nlp"
 	"github.com/itsabot/abot/shared/plugin"
 )
